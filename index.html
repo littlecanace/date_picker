@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>移动端日期选择</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="date_picker.css">
+</head>
+<style>
+h3 {
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#picker {
+    width: 80%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 50px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 20px;
+}
+</style>
+
+<body>
+    <h3>Time Picker</h3>
+    <div id="picker">选择日期</div>
+    <script src="picker.min.js"></script>
+    <script src="date_picker.js"></script>
+    <script>
+    window.onload = function() {
+        new DatePicker({
+            startYear: 1990,
+            endYear: 2018,
+            initDate: '2017-06-06'
+        });
+    };
+    </script>
+</body>
+
+</html>
